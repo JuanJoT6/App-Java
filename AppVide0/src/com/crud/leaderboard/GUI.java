@@ -26,7 +26,7 @@ public class GUI {
                     preparedStatement.setString(3, leadRank);
                     preparedStatement.executeUpdate();
                     showData();
-                    JOptionPane.showMessageDialog(null, "La informacion ha sido insertada");
+                    JOptionPane.showMessageDialog(null, "La informacion ha sido insertada exitosamente en la base de datos");
                 }catch (SQLException err){
                     Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, err);
                 }
